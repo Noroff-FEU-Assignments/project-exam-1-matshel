@@ -1,0 +1,145 @@
+/* hero section */
+.hero-details {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("/images/hero-details.jpg");
+}
+/* hero section end*/
+
+/* post section */
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 10px;
+}
+
+.post-container-details {
+    display: flex;
+    max-width: 700px;
+}
+
+.post-details {
+    width: 100vw;
+    min-width: fit-content;
+    height: fit-content;
+    border: none;
+}
+
+.post-details p {
+    max-width: 600px;
+    line-height: 1.4;
+    font-size: 1.7rem;
+    margin: 20px 0;
+}
+
+.title {
+    margin: 20px 0;
+    font-size: 3rem;
+}
+
+.score {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.place {
+    margin: 20px 0;
+    padding-top: 0;
+}
+
+.post-details img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.info-image {
+    display: flex;
+    margin-top: 20px;
+    font-family: var(--quicksand);
+}
+
+.info-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--dark);
+    margin: 20px 0;
+}
+
+.info-image-info {
+    background: rgba(237, 182, 84);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    padding: 2px 20px;
+    border-radius: 20px;
+}
+/* post section */
+
+/* modal */
+.modal-container {
+    display: none;
+    place-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    max-width: max-content;
+}
+
+.img-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.modal-image {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: #fff;
+}
+
+.close {
+    text-transform: uppercase;
+    padding: 15px 20px;
+    background: var(--primary);
+    border-radius: 50%;
+    color: var(--dark);
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+/* modal end */
+
+/* media queries */
+@media screen and (min-width: 801px) {
+    .modal-content {
+        margin: 5% auto;
+    }
+    .modal-image {
+        width: 900px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .close {
+        display: none;
+    }
+
+    .img-modal {
+        overflow-x: none;
+    }
+}
+/* media queries end */
